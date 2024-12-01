@@ -1,0 +1,46 @@
+/* Стили для navbar */
+* { margin: 0; padding: 0;}
+
+.navbar {
+	background-color: #b5b7b8;
+	overflow: visible;
+	top: 0;
+	width: 100%;
+  }
+  
+  .navbar-list {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .navbar-item {
+	border-left: 1px solid black;
+	width: auto;
+	text-align: center;
+  }
+  
+  .navbar-item a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+  }
+  .navbar-item.active a { 
+	background-color: #d6d3d3; 
+  }
+  .navbar-item a:hover {
+	background-color: #a4a8a8;
+	color: black;
+  }
+  
+  /* Адаптивный дизайн */
+  @media screen and (max-width: 1000px) {
+	.navbar-list {
+	  flex-direction: column;
+	}
+  }
+  

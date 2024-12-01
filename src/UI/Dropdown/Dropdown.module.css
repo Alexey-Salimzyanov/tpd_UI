@@ -1,0 +1,8 @@
+/* Здесь можно добавить стили для компонента Dropdown */
+.dropdown {
+	height: 100%;
+}
+
+.dropdown select {
+	height: 100%;
+}
