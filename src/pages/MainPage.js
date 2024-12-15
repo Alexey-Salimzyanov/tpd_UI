@@ -4,6 +4,8 @@ import CustomButton from '../UI/CustomButton/CustomButton.js';
 import Dropdown from '../UI/Dropdown/Dropdown.js';
 import Table from '../components/table/Table.js';
 import Tabs from '../components/Tabs/Tabs.js';
+import DataTable from '../components/table/MuiTable.js';
+import DenseMenu from '../UI/MuiDence/DenseMenu.js';
 
 
 
@@ -42,10 +44,12 @@ const MainPage = () => {
 		  <CustomButton onClick={() => alert('нажатие')}>кнопка</CustomButton>
 		</div>
 		<div style={{margin:"10px"}}> 
-		  <CustomCheckbox>чекбокс</CustomCheckbox>
-      <h1>Таблица данных</h1>
-      <Table data={data} />
-    </div>
+			<CustomCheckbox>чекбокс</CustomCheckbox>
+			<h1>Таблица данных</h1>
+			<Table data={data} />
+			<DataTable/>
+			{/* <DenseMenu/> */}
+    	</div>
 	  </div>
 	);
   };

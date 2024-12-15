@@ -13,7 +13,7 @@ const Modal = ({ show, onClose, children }) => {
           &times;
         </button>
         {children}
-      </div>s
+      </div>
     </div>
   );
 };
